@@ -3,6 +3,15 @@ import re
 import argparse
 
 
+'''
+To do list:
+    logging
+    more exception handling
+    subfolders?
+    comments
+'''
+
+
 def list_files(dir):
     filelist = [file for file in os.listdir(dir) if os.path.isfile(os.path.join(dir, file))]
     return filelist
@@ -17,7 +26,7 @@ def replace_spaces(filelist):
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Replace all spaces in filenames with underscores.')
-    parser.add_argument('-d', dest='dir', type=str, required=True,
+    parser.add_argument('-d', dest='dir', action='store', required=True,
                         help='Directory in which filenames should be processed')
 
     args = parser.parse_args()
