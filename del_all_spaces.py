@@ -28,6 +28,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Replace all spaces in filenames with underscores.')
     parser.add_argument('-d', dest='dir', action='store', required=True,
                         help='Directory in which filenames should be processed')
+    parser.add_argument('-l', dest='log_on', action='store_true', help='Turns logging on or off')
 
     args = parser.parse_args()
 
