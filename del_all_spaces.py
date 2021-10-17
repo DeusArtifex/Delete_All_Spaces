@@ -26,8 +26,7 @@ def replace_spaces(filelist):
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Replace all spaces in filenames with underscores.')
-    parser.add_argument('-d', dest='dir', action='store', required=True,
-                        help='Directory in which filenames should be processed')
+    parser.add_argument(dest='dir', action='store', help='Directory in which filenames should be processed')
 
     args = parser.parse_args()
 
