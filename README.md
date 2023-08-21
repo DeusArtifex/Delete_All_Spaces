@@ -1,5 +1,6 @@
 # Delete_All_Spaces
 Python script that replaces all the spaces with underscores in filenames of all the files in the specified folder
+Project made with the purpouse of fixing some old directories with incorrect naming convention and out of boredom. Uses basic python file operations and command line arguments.
 
 ## Usage
 	del_all_spaces.py -d [desired_path]
